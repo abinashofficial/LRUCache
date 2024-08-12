@@ -124,7 +124,7 @@ func (c *LRUCache) broadcastCacheData() {
 }
 
 func main() {
-	cache := NewLRUCache(100)
+	cache := NewLRUCache(1024)
 
 	// WebSocket endpoint for cache updates
 	http.HandleFunc("/cacheUpdates", func(w http.ResponseWriter, r *http.Request) {
